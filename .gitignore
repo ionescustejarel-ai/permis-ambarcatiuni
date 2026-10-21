@@ -1,0 +1,24 @@
+# build artifacts
+# Anchored with a leading slash on purpose: these name the generated output
+# directories at the repository root only. An unanchored `build/` matches a
+# directory of that name at ANY depth, which once silently swallowed the
+# source package and its tests. Keep the slash.
+/build/
+/dist/
+*.pyc
+__pycache__/
+*.egg-info/
+.venv/
+venv/
+
+# generated data (regenerate with `python -m caa.cli`)
+questions.json
+themes.json
+
+# scratch
+*.tmp
+*.log
+
+# third-party and official source documents are not redistributed (see README, "Data")
+/sources/arhiva/
+/sources/anr/*.pdf
